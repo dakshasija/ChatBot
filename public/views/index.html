@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0">
+    <title>chatbox</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
+    <link href="../css/fonts.css" rel="stylesheet" type="text/css">
+    <link href="../css/screen.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="mainContainer">
+      <div class="resultContainer">
+      </div>
+      <div class="containerText">
+          <input class="textContainer" placeholder="write message"/>
+      </div>
+        <div class="btnSave col-xs-offset-1 col-xs-4">
+          Send
+        </div>
+    </div>
+
+    <script id="chatTemplate" type="text/x-jquery-tmpl">
+
+        <div class="chat1">
+            <div class="name1">
+                {{html text}}
+            </div>
+        </div>
+        
+    </script>
+    <script id="chatNewTemplate" type="text/x-jquery-tmpl">
+          <div class="chat">
+        <div class="name">
+          {{html text}}
+        </div>
+      </div>
+    </script>
+    <script src="../scripts/jquery.js"></script>
+    <script src="../scripts/transit.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <script src="../scripts/highcharts.js"></script>
+    <script src="../scripts/jquery.tmpl.min.js"></script>
+    <script src="../scripts/jslinq.js"></script>
+    <script src="../scripts/moment.min.js"></script>
+    <script src="../scripts/superjson.js"></script>
+    <script src="../scripts/tocca.min.js"></script>
+    <script src="../scripts/socket.io.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/chatResult.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

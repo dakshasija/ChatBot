@@ -1,0 +1,134 @@
+html {
+  font-size: 10px;
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 300;
+}
+body {
+  margin: 0;
+  font-size: 1.6rem;
+}
+input {
+  font-weight: 300;
+  font-family: 'Roboto', 'sans-serif';
+  color: black;
+}
+input::-webkit-input-placeholder {
+  font-family: 'Roboto', 'sans-serif';
+  font-weight: 200;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.mainContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-width: 1;
+  padding: 10px;
+  background: #093A42;
+  opacity: 0.9;
+}
+.mainContainer .containerText {
+  position: absolute;
+  height: 5rem;
+  bottom: 1rem;
+  left: 1rem;
+  right: 12rem;
+}
+.mainContainer .containerText .textContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-style: groove;
+  border-width: 1;
+  overflow-y: scroll;
+  padding-left: 2rem;
+  border-radius: 0.8rem;
+}
+.mainContainer .btnSave {
+  position: absolute;
+  background-color: white;
+  border-radius: 0.5rem;
+  border-style: groove;
+  right: 1rem;
+  bottom: 1rem;
+  height: 5rem;
+  width: 9rem;
+  line-height: 4.5rem;
+  text-align: center;
+  color: black;
+}
+.mainContainer .resultContainer {
+  position: absolute;
+  left: 0.8rem;
+  right: 0.8rem;
+  top: 0.8rem;
+  bottom: 7rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-shadow: 0px 0px 24px -9px #000000;
+  background: url('../images/jj.jpg');
+  background-repeat: no-repeat;
+}
+.mainContainer .resultContainer .chat {
+  position: relative;
+  float: left;
+  width: 90%;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 2px 1px;
+  color: black;
+  bottom: 3rem;
+  left: 2.5rem;
+  padding: 0.7rem 0.2rem;
+}
+.mainContainer .resultContainer .chat .name {
+  position: relative;
+  float: left;
+  background-color: white;
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+}
+.mainContainer .resultContainer .chat .name:after {
+  content: " ";
+  width: 0.5rem;
+  height: 0.2rem;
+  border-top: 0.8rem solid transparent;
+  border-left: 0.8rem solid transparent;
+  border-bottom: 0.8rem solid #ffffff;
+  border-right: 0.8rem solid transparent;
+  position: absolute;
+  margin-left: -1.45rem;
+  left: 0.6rem;
+  top: 40%;
+}
+.mainContainer .resultContainer .chat1 {
+  position: relative;
+  float: right;
+  width: 90%;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-shadow: rgba(255, 255, 255, 0.5) 1px 2px 1px;
+  color: black;
+  bottom: 3rem;
+  right: 2.5rem;
+  padding: 0.7rem 0.2rem;
+}
+.mainContainer .resultContainer .chat1 .name1 {
+  position: relative;
+  float: right;
+  background-color: white;
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+}
